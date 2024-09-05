@@ -1,0 +1,65 @@
+body{
+    font-family: 'Open Sans' , sans-serif;
+    background-color: rgb(205, 215, 182);
+}
+
+div {
+    position: relative; /* Nécessaire pour permettre le mouvement */
+    width: 200px;
+    height: 200px;
+    background-color: rgb(186, 186, 50);
+
+    /* Préfixes pour WebKit (Safari, anciennes versions de Chrome) */
+    -webkit-animation-name: chgt-couleur;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+
+    /* Préfixes pour Firefox */
+    -moz-animation-name: chgt-couleur;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-delay: 1s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+
+    /* Préfixes pour Opera */
+    -o-animation-name: chgt-couleur;
+    -o-animation-duration: 5s;
+    -o-animation-timing-function: ease;
+    -o-animation-delay: 4s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+
+    /* Animation pour les navigateurs modernes */
+    animation-name: chgt-couleur;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Animation combinant les changements de couleur et de position */
+@-webkit-keyframes chgt-couleur {
+    0% { background-color: rgb(236, 18, 18); top:   by50px; left: 200px; }
+    25% { background-color: yellow; top: 200px; left: 200px; }
+    50% { background-color: rgb(211, 228, 211); top: 200px; left: 200px; }
+    75% { background-color: rgb(124, 0, 128); top: 200px; left: 25px; }
+    100% { background-color: rgb(2, 24, 2); top: 200px; left: 200px; }
+}
+
+
+
+
+
+
+
+/* Effet lors du survol de la souris */
+div:hover {
+    width: 400px;
+    background-color: aqua;
+}
+
