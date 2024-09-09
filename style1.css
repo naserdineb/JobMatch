@@ -9,37 +9,7 @@ div {
     height: 200px;
     background-color: rgb(186, 186, 50);
 
-    /* Préfixes pour WebKit (Safari, anciennes versions de Chrome) */
-    -webkit-animation-name: chgt-couleur;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-delay: 0.1s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-
-    /* Préfixes pour Firefox */
-    -moz-animation-name: chgt-couleur;
-    -moz-animation-duration: 0.1s;
-    -moz-animation-timing-function: ease;
-    -moz-animation-delay: 0.1s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-
-    /* Préfixes pour Opera */
-    -o-animation-name: chgt-couleur;
-    -o-animation-duration: 1s;
-    -o-animation-timing-function: ease;
-    -o-animation-delay: 1s;
-    -o-animation-iteration-count: infinite;
-    -o-animation-direction: alternate;
-
-    /* Animation pour les navigateurs modernes */
-    animation-name: chgt-couleur;
-    animation-duration: @.1s;
-    animation-timing-function: ease;
-    animation-delay: @.1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+   
 }
 
 /* Animation combinant les changements de couleur et de position */
