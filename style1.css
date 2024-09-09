@@ -21,7 +21,7 @@ div {
     -moz-animation-name: chgt-couleur;
     -moz-animation-duration: 1s;
     -moz-animation-timing-function: ease;
-    -moz-animation-delay: 1s;
+    -moz-animation-delay: 0.1s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: alternate;
 
