@@ -45,7 +45,7 @@ div {
 /* Animation combinant les changements de couleur et de position */
 @-webkit-keyframes chgt-couleur {
     0% { background-color: rgb(236, 18, 18); top:   by50px; left: 200px; }
-    25% { background-color: yellow; top: 200px; left: 200px; }
+    25% { background-color: red; top: 200px; left: 200px; }
     50% { background-color: rgb(211, 228, 211); top: 200px; left: 200px; }
     75% { background-color: rgb(124, 0, 128); top: 200px; left: 25px; }
     100% { background-color: rgb(2, 24, 2); top: 200px; left: 200px; }
