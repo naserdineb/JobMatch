@@ -14,7 +14,7 @@ div {
     -webkit-animation-timing-function: ease;
     -webkit-animation-delay: 0.1s;
     -webkit-animation-iteration-count: 1;
-    -webkit-animation-direction: alternate;
+    -webkit-animation-direction: center;
 
     /* Préfixes pour Firefox */
     -moz-animation-name: chgt-couleur;
@@ -22,7 +22,7 @@ div {
     -moz-animation-timing-function: ease;
     -moz-animation-delay: 0.1s;
     -moz-animation-iteration-count: 1;
-    -moz-animation-direction: alternate;
+    -moz-animation-direction: center;
 
     /* Préfixes pour Opera */
     -o-animation-name: chgt-couleur;
@@ -30,7 +30,7 @@ div {
     -o-animation-timing-function: ease;
     -o-animation-delay: 1s;
     -o-animation-iteration-count: 1;
-    -o-animation-direction: alternate;
+    -o-animation-direction: center;
 
     /* Animation pour les navigateurs modernes */
     animation-name: chgt-couleur;
@@ -38,7 +38,7 @@ div {
     animation-timing-function: ease;
     animation-delay: @.1s;
     animation-iteration-count: 1;
-    animation-direction: alternate;
+    animation-direction: center;
    
 }
 
