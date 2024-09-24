@@ -51,13 +51,14 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .photo-gallery img:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(3deg); }
-       
+        .photo-gallery img:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+        .photo-gallery img:nth-child(2) { transform: rotate(90deg) translateX(150px) rotate(-90deg); }
+        .photo-gallery img:nth-child(3) { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
+        .photo-gallery img:nth-child(4) { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
         @keyframes spin {
             from { transform: rotate(0deg); }
-            to { transform: rotate(3deg); }
+            to { transform: rotate(360deg); }
         }
-
         .contact-form {
             margin-top: 20px;
         }
@@ -70,7 +71,6 @@
     <div class="container">
         <h1>Bienvenue sur ma page Web professionnelle</h1>
         <p class="text-center">Ceci est un exemple de texte sur une page Web.</p>
-
         <div class="calculator text-center">
             <h2>Calculatrice Simple</h2>
             <input type="number" id="num1" placeholder="Nombre 1">
@@ -78,7 +78,6 @@
             <button class="btn btn-primary" onclick="calculate()">Calculer</button>
             <p id="result">Résultat : </p>
         </div>
-
         <div class="photo-gallery">
             <div class="circle">
                 <img src="pic02.jpg" alt="Boudra Naserdine">
@@ -87,7 +86,6 @@
                 <img src="pic.06.png" alt="Exemple de photo 4">
             </div>
         </div>
-
         <div class="contact-form">
             <h2 class="text-center">Formulaire de Contact</h2>
             <form>
@@ -107,7 +105,6 @@
             </form>
         </div>
     </div>
-
     <script>
         function calculate() {
             var num1 = parseFloat(document.getElementById('num1').value);
@@ -119,4 +116,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qla9S0Zlro6CRpvJl/t9P6lhrCj2JWewEwB2Q6P/HgxU3xk5jKN3BGP9+Q5MZr6Q" crossorigin="anonymous"></script>
 </body>
 </html>
-
