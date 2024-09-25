@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
     <title>Monsite</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h1 {
+            color: #396104;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .calculator {
+            margin-top: 20px;
+        }
+        .calculator input {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            text-align: center;
+        }
+        .photo-gallery {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .photo-gallery .circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: spin 10s linear infinite;
+        }
+        .photo-gallery img {
+            position: absolute;
+            max-width: 100px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .photo-gallery img:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+        .photo-gallery img:nth-child(2) { transform: rotate(90deg) translateX(150px) rotate(-90deg); }
+        .photo-gallery img:nth-child(3) { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
+        .photo-gallery img:nth-child(4) { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input {
+            margin-bottom: 10px;
+        }
+    </style>
     
     
 </head>
