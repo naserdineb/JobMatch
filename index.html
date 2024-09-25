@@ -41,26 +41,28 @@
             width: 300px;
             height: 300px;
         }
-        .photo-gallery .circle {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            animation: spin 10s linear infinite;
-        }
         .photo-gallery img {
             position: absolute;
             max-width: 100px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: move 2s ease-in-out infinite;
         }
-        .photo-gallery img:nth-child(1) { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-        .photo-gallery img:nth-child(2) { transform: rotate(90deg) translateX(150px) rotate(-90deg); }
-        .photo-gallery img:nth-child(3) { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
-        .photo-gallery img:nth-child(4) { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+        .photo-gallery img:nth-child(1) { left: 0; }
+        .photo-gallery img:nth-child(2) { left: 100px; }
+        .photo-gallery img:nth-child(3) { left: 200px; }
+        .photo-gallery img:nth-child(4) { left: 100px; }
+        @keyframes move {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
         .contact-form {
             margin: 20px auto;
@@ -88,12 +90,10 @@
             <p id="result">Résultat : </p>
         </div>
         <div class="photo-gallery">
-            <div class="circle">
-                <img src="pic02.jpg" alt="Boudra Naserdine">
-                <img src="pic.04.jpg" alt="Exemple de photo 2">
-                <img src="pic.05.png" alt="Exemple de photo 3">
-                <img src="pic.06.png" alt="Exemple de photo 4">
-            </div>
+            <img src="pic02.jpg" alt="Boudra Naserdine">
+            <img src="pic.04.jpg" alt="Exemple de photo 2">
+            <img src="pic.05.png" alt="Exemple de photo 3">
+            <img src="pic.06.png" alt="Exemple de photo 4">
         </div>
         <div class="contact-form">
             <h2>Formulaire de Contact</h2>
