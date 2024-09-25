@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
     <title>Monsite</title>
-
-    
-    
-    
-</head>
-<body>
     
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            margin: 0
+            margin: 0;
             padding: 0;
         }
         .container {
             margin-top: 20px;
+            text-align: center;
         }
         h1 {
             color: #396104;
-            text-align: center;
             margin-top: 20px;
         }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
         .calculator {
-            margin-top: 20px;
+            margin: 20px auto;
+            max-width: 300px;
         }
         .calculator input {
             width: 100px;
@@ -37,13 +36,10 @@
             text-align: center;
         }
         .photo-gallery {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
+            margin: 20px auto;
             position: relative;
             width: 300px;
             height: 300px;
-            margin: 0 auto;
         }
         .photo-gallery .circle {
             position: absolute;
@@ -67,22 +63,28 @@
             to { transform: rotate(360deg); }
         }
         .contact-form {
-            margin-top: 20px;
+            margin: 20px auto;
+            max-width: 300px;
         }
         .contact-form input {
+            width: 100%;
             margin-bottom: 10px;
+            padding: 5px;
         }
     </style>
+</head>
+<body>
+    
     <div class="container">
         <h1>Bienvenue sur ma page Web professionnelle</h1>
-        <img src="logo.png" alt="Logo" class="img-fluid">
+        <img src="logo.png" alt="Logo" class="logo">
         <a href="https://u.pcloud.link/publink/show?code=XZKzgI0Z5YXiDE7GfbRp8ragDCg5RmTgUO9k" class="btn btn-primary" download="Job.exe">Télécharger le fichier executable Job.exe</a>
-        <p class="text-center">Ceci est un exemple de texte sur une page Web.</p>
-        <div class="calculator text-center">
+        <p>Ceci est un exemple de texte sur une page Web.</p>
+        <div class="calculator">
             <h2>Calculatrice Simple</h2>
             <input type="number" id="num1" placeholder="Nombre 1">
             <input type="number" id="num2" placeholder="Nombre 2">
-            <button class="btn btn-primary" onclick="calculate()">Calculer</button>
+            <button onclick="calculate()">Calculer</button>
             <p id="result">Résultat : </p>
         </div>
         <div class="photo-gallery">
@@ -94,23 +96,12 @@
             </div>
         </div>
         <div class="contact-form">
-            <h2 class="text-center">Formulaire de Contact</h2>
+            <h2>Formulaire de Contact</h2>
             <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
-                </div>
-                <div class="mb-3">
-                    <label for="address" class="form-label">Adresse</label>
-                    <input type="text" class="form-control" id="address" placeholder="Entrez votre adresse">
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Téléphone</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone">
-                </div>
-                <button type="submit" class="btn btn-primary">Soumettre</button>
-                
-
+                <input type="text" id="name" placeholder="Entrez votre nom">
+                <input type="text" id="address" placeholder="Entrez votre adresse">
+                <input type="tel" id="phone" placeholder="Entrez votre numéro de téléphone">
+                <button type="submit">Soumettre</button>
             </form>
         </div>
     </div>
@@ -122,6 +113,5 @@
             document.getElementById('result').innerText = 'Résultat : ' + result;
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qla9S0Zlro6CRpvJl/t9P6lhrCj2JWewEwB2Q6P/HgxU3xk5jKN3BGP9+Q5MZr6Q" crossorigin="anonymous"></script>
 </body>
 </html>
