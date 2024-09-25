@@ -49,6 +49,19 @@ div {
     
 }
 
+/*deplacement Image
+
+.img-fluid{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%; /* Vous pouvez ajuster cette valeur en fonction de la taille souhaitée */
+            max-width: 400px; /* Taille maximale de l'image */
+            height: auto; /* Maintenir les proportions */
+
+
+}
+
 
 
 
